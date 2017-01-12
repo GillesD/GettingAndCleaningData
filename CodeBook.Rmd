@@ -150,4 +150,4 @@ library(plyr);
 Donnees2 <- aggregate(. ~subject + activity, Donnees, mean)
 Donnees2 <- Donnees2[order(Donnees2$subject, Donnees2$activity),]
 write.table(Donnees2, file = "./Data/tidydata.txt", row.name=FALSE)
-```{r}
+```
